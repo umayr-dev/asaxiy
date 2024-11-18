@@ -11,7 +11,7 @@ const Header = () => {
                 <input className="outline-none w-3/4" type="text" placeholder="Qidirish"  />
                 <button className="w-[80px] text-white h-10 rounded-tr-lg rounded-br-lg bg-[#006bff]">Qidirish</button>
               </div>
-              <h1 className=''>Asaxiy</h1>
+              
       </div>
     </header>
 
