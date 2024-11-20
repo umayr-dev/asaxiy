@@ -30,9 +30,9 @@ const Header = () => {
 
     <header className=" border-[1px]">
       <div className="mx-auto max-w-[1380px] h-[80px] header-top items-center flex   justify-between ">
-              <Image className='w-32 h-9' src="https://asaxiy.uz/custom-assets/images/company/asaxiy-logo.svg" alt="" />
+              <Image className='w-32 h-9' height={36} width={128}   src="https://asaxiy.uz/custom-assets/images/company/asaxiy-logo.svg" alt="" />
               <div className="w-32 h-9 relative gap-2 after:w-0 after:h-10 after:absolute after:top-0 after:hover:w-32 after:hover:h-10 after:opacity-100 after:transition-all after:rounded-lg after:left-0 after:bg-[#0d00ff] after:z-10 flex items-center justify-center rounded-lg bg-[#006bff]">
-                <Image className="z-20" src="/menu.png" alt="" />
+                <Image className="z-20" width={24} height={24} src="/menu.png" alt="" />
                 <p className="text-white z-20">Bolimlar</p>
               </div>
               <div className="w-[480px] h-9 flex pl-2 items-center border-2 rounded-lg justify-between border-[#006bff]">
@@ -41,37 +41,37 @@ const Header = () => {
               </div>
               <p onClick={()=> router.push("/")} className="flex cursor-pointer text-[14px] flex-col
               items-center hover:text-[#006bff] transition-all">
-                <Image src="https://asaxiy.uz/custom-assets/images/icons/header/compare_header.svg" alt="" />
+                <Image height={24} width={24} src="https://asaxiy.uz/custom-assets/images/icons/header/compare_header.svg" alt="" />
                 Taqqoslash
               </p>
               <p className="flex flex-col cursor-pointer text-[14px] hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4" src="https://asaxiy.uz/custom-assets/images/icons/header/payment.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4" src="https://asaxiy.uz/custom-assets/images/icons/header/payment.svg" alt="" />
                 To'lov
               </p>
               <p className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/tracker.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/tracker.svg" alt="" />
                 Trek
               </p>
               <p className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/cart.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/cart.svg" alt="" />
                 Savatcha
               </p>
               <p className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/cart.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/cart.svg" alt="" />
                 Sevimlilar
               </p>
               <p className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/language-ru.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/language-ru.svg" alt="" />
                 Русский
               </p>
               <p className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center">
-                <Image className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/avatar.svg" alt="" />
+                <Image height={24} width={24} className="w-5 h-4"  src="https://asaxiy.uz/custom-assets/images/icons/header/avatar.svg" alt="" />
                 Kirish
               </p>
       </div>
