@@ -3,6 +3,7 @@ import Header from "@/component/header";
 import "@/pages/_app"
 import {Inter} from "next/font/google"
 import Footer from "@/component/Footer";
+import Adventage from "@/component/Adventage";
 
 const inter = Inter({subsets: ['latin'], weight: '400'})
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header/>
         {children}
+        <Adventage/>
         <Footer/>
       </body>
     </html>

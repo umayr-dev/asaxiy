@@ -30,11 +30,15 @@ const Header = () => {
 
     <header className=" border-[1px]">
       <div className="mx-auto max-w-[1380px] h-[80px] header-top items-center flex   justify-between ">
+              <Link href={"/"}>
               <Image className='w-32 h-9' height={36} width={128}   src="https://asaxiy.uz/custom-assets/images/company/asaxiy-logo.svg" alt="" />
-              <div className="w-32 h-9 relative gap-2 after:w-0 after:h-10 after:absolute after:top-0 after:hover:w-32 after:hover:h-10 after:opacity-100 after:transition-all after:rounded-lg after:left-0 after:bg-[#0d00ff] after:z-10 flex items-center justify-center rounded-lg bg-[#006bff]">
+              </Link> 
+              <Link href={"/categories"}>
+              <div className="w-32 h-9 relative gap-2 after:w-0 after:h-10 after:absolute after:top-0 after:hover:w-32 after:hover:h-10  after:transition-all transition after:duration-200 after:ease-in-out  after:rounded-lg after:left-0 after:bg-[#0d00ff] after:z-10 flex items-center justify-center rounded-lg bg-[#006bff]">
                 <Image className="z-20" width={24} height={24} src="/menu.png" alt="" />
                 <p className="text-white z-20">Bolimlar</p>
               </div>
+              </Link>
               <div className="w-[480px] h-9 flex pl-2 items-center border-2 rounded-lg justify-between border-[#006bff]">
                 <input className="outline-none w-3/4" type="text" placeholder="Qidirish"  />
                 <button className="w-[80px] text-white h-9 rounded-tr-lg rounded-br-lg bg-[#006bff]">Qidirish</button>
