@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color:#f4f7fd;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: sans-serif;
+body {
+  background-color: #f4f7fd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
 }
