@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SiteApp = () => {
   return (
-    <div className="flex justify-center items-center px-8 py-8 gap-10">
+    <div className="mx-auto max-w-[1380px] flex justify-center items-center  py-8 gap-5">
       <div className="w-[48%] h-[270px] border-none rounded-xl bg-[#006bff] pt-4 pl-4 pr-4 flex  justify-between">
         <div className="w-[100%] flex flex-col gap-2 items-center pt-16 pl-5">
           <Image

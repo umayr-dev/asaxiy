@@ -9,4 +9,7 @@ export interface BannerSwipers {
   id: string;
   name: string;
   image: string;
+  price: string;
+  images: string;
+  discount_price: string;
 }
