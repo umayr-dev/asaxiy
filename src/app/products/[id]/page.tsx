@@ -8,7 +8,12 @@ async function getDetailProduct(id: string) {
   return data;
 }
 
-const ProductPage = async ({ params }: { params: { id: string } }) => {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+const ProductPage = async ({ params }: PageProps ) => {
   const data = await getDetailProduct(params.id);
 
   return (
