@@ -36,7 +36,7 @@ const Header = () => {
               width={128}
               src="https://asaxiy.uz/custom-assets/images/company/asaxiy-logo.svg"
               alt=""
-            />
+            />  
           </Link>
           <Link href={"/categories"}>
             <div className="w-32 h-9 relative gap-2 after:w-0 after:h-10 after:absolute after:top-0 after:hover:w-32 after:hover:h-10  after:transition-all transition after:duration-200 after:ease-in-out  after:rounded-lg after:left-0 after:bg-[#0d00ff] after:z-10 flex items-center justify-center rounded-lg bg-[#006bff]">

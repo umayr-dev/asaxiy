@@ -12,4 +12,7 @@ export interface BannerSwipers {
   price: string;
   images: string;
   discount_price: string;
+  reviews: string;
+  price_per_month: string;
+  months: string;
 }
