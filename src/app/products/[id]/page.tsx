@@ -28,6 +28,7 @@ const ProductPage = async ({ params }: PageProps ) => {
       <p className="text-xl font-semibold text-green-500 mt-4">
         Narxi: {data.discount_price} so'm
       </p>
+      
     </div>
   );
 };

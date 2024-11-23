@@ -15,4 +15,5 @@ export interface BannerSwipers {
   reviews: string;
   price_per_month: string;
   months: string;
+  isNew: string;
 }
