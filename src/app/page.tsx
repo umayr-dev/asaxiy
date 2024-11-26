@@ -2,15 +2,18 @@ import AboutCompany from "@/component/AboutCompany";
 import Banner from "@/component/Banner";
 import BannerSwiper from "@/component/BannerSwiper";
 import Product from "@/component/Product";
+import ProductBanner from "@/component/ProductBanner";
 import SiteApp from "@/component/SiteApp";
 import React from "react";
 
 function HomePage() {
   return (
     <div className="flex-1">
+      <ProductBanner/>
       <Banner/>
       <Product/>
       <SiteApp />
+      <Product/>
       <BannerSwiper />
       <AboutCompany />
     </div>

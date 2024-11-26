@@ -11,11 +11,14 @@
   "dependencies": {
     "axios": "^1.7.7",
     "boxicons": "^2.1.4",
+    "lucide-react": "^0.461.0",
+    "material": "^0.9.18",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "sass": "^1.81.0",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "ui": "^0.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",
