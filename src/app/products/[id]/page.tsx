@@ -1,4 +1,5 @@
 import axios from "axios";
+import Image from "next/image";
 import React from "react";
 
 async function getDetailProduct(id: string) {
@@ -13,22 +14,35 @@ type PageProps = {
     id: string;
   };
 };
-const ProductPage = async ({ params }: PageProps ) => {
+const ProductPage = async ({ params }: PageProps) => {
   const data = await getDetailProduct(params.id);
 
   return (
     <div className="mx-auto max-w-[1380px]">
-      <h2 className="text-3xl font-bold mb-4">{data.name}</h2>
-      <p className="text-lg text-gray-700 mb-6">{data.description}</p>
-      <img
-        className="w-[160px] h-[160px] rounded-lg shadow-md"
-        src={data.images}
-        alt={data.name}
-      />
-      <p className="text-xl font-semibold text-green-500 mt-4">
-        Narxi: {data.discount_price} so'm
-      </p>
-      
+      <p>{data.name}</p>
+      <div>
+        <img src={data.images} className="w-[320px] h-[320px]" alt="" />
+        <div>
+          <h1>{data.name}</h1>
+          <div>
+            <div className="flex">
+              <Image src={"/star-solid-24.png"} alt="" width={14} height={14} />
+              <Image src={"/star-solid-24.png"} alt="" width={14} height={14} />
+              <Image src={"/star-solid-24.png"} alt="" width={14} height={14} />
+              <Image src={"/star-solid-24.png"} alt="" width={14} height={24} />
+              <Image src={"/star-solid-24.png"} alt="" width={14} height={14} />
+            </div>
+            <p>{data.reviews}ta sharx</p>
+            <p><img src="https://asaxiy.uz/custom-assets/images/icons/share.svg" alt="" />Ulashish</p>
+          </div>
+          <h2>{data.discount_price.toLocaleString()} so'm</h2>
+          <div>
+            <p>Brend</p>
+            <p></p>
+            <p>{data.Brand_id}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

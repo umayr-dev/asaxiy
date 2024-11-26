@@ -31,11 +31,11 @@ const ProductCard = () => {
   }
 
   return (
-    <div className="mx-auto max-w-[1380px] grid grid-cols-5 py-10">
+    <div className="mx-auto max-w-[1380px] grid grid-cols-5  py-10">
       {isProduct.map((item) => (
         <div
           key={item.id}
-          className="border relative overflow-x-hidden box-border bg-white w-[265px] h-[434px] flex  flex-col rounded-2xl p-4 shadow hover:shadow-lg hover:scale-105 transition duration-300"
+          className="border relative overflow-x-hidden box-border bg-white w-[265px] h-[434px] flex  flex-col rounded-2xl p-4 shadow hover:shadow-lg hover:scale-105 mb-5 transition duration-300"
         >
           <Link
             className="flex flex-col items-center"
@@ -47,7 +47,7 @@ const ProductCard = () => {
               className="w-[160px] h-40 object-cover rounded mb-4"
             />
             <div className="w-[100%] box-border flex flex-col gap-1">
-              <h3 className="font-normal text-[14px]">{item.name}</h3>
+              <h3 className="font-normal w-[100%] h-5 overflow-hidden text-[14px]">{item.name}</h3>
               <div className="w-[100%] h-8 flex items-center justify-between">
                 <div className="flex">
                   <Image
