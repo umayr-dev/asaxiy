@@ -17,3 +17,8 @@ export interface BannerSwipers {
   months: string;
   isNew: string;
 }
+interface PageProps {
+  params: {
+    id: string;
+  };
+}

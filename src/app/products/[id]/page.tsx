@@ -9,11 +9,12 @@ async function getDetailProduct(id: string) {
   return data;
 }
 
-type PageProps = {
+interface PageProps {
   params: {
     id: string;
   };
-};
+}
+
 const ProductPage = async ({ params }: PageProps) => {
   const data = await getDetailProduct(params.id);
 
