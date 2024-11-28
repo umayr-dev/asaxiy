@@ -99,7 +99,7 @@ const Header = () => {
             />
             Trek
           </p>
-          <p
+          <Link href={"/cart"}
             className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center"
           >
@@ -111,7 +111,7 @@ const Header = () => {
               alt=""
             />
             Savatcha
-          </p>
+          </Link>
           <p
             className="flex flex-col text-[14px] cursor-pointer hover:text-[#006bff] transition-all
               items-center"

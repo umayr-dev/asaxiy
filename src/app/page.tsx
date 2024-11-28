@@ -11,9 +11,13 @@ function HomePage() {
     <div className="flex-1">
       <ProductBanner/>
       <Banner/>
+      <div className="mx-auto max-w-[1380px] grid grid-cols-5  py-10">
       <Product/>
+      </div>
       <SiteApp />
+      <div className="mx-auto max-w-[1380px] grid grid-cols-5  py-10">
       <Product/>
+      </div>
       <BannerSwiper />
       <AboutCompany />
     </div>

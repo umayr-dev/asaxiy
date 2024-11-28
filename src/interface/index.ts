@@ -22,3 +22,9 @@ interface PageProps {
     id: string;
   };
 }
+export interface ProductType{
+  id: string;
+  product: string;
+  categoryId: string;
+  
+}
