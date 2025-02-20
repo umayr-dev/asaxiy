@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 async function getDetailProduct(id: string) {
   const { data } = await axios.get(
@@ -15,8 +15,32 @@ interface PageProps {
   };
 }
 
-const ProductPage = async ({ params }: PageProps) => {
-  const data = await getDetailProduct(params.id);
+const ProductPage = ({ params }: PageProps) => {
+  const [data, setData] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const productData = await getDetailProduct(params.id);
+        setData(productData);
+      } catch (error) {
+        console.error("Error fetching product data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [params.id]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!data) {
+    return <div>Product not found</div>;
+  }
 
   return (
     <div className="mx-auto max-w-[1380px]">
@@ -34,7 +58,13 @@ const ProductPage = async ({ params }: PageProps) => {
               <Image src={"/star-solid-24.png"} alt="" width={14} height={14} />
             </div>
             <p>{data.reviews}ta sharx</p>
-            <p><img src="https://asaxiy.uz/custom-assets/images/icons/share.svg" alt="" />Ulashish</p>
+            <p>
+              <img
+                src="https://asaxiy.uz/custom-assets/images/icons/share.svg"
+                alt=""
+              />
+              Ulashish
+            </p>
           </div>
           <h2>{data.discount_price.toLocaleString()} so'm</h2>
           <div>
